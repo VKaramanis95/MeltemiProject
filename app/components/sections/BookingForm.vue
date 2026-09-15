@@ -1,5 +1,7 @@
 <script setup lang="ts">
 const { t, tm, rt } = useI18n()
+
+
 type CategoryOption = { id: string; label: string; price: number }
 const categories = computed<CategoryOption[]>(() => {
   const raw = tm('booking.categories') as unknown as Array<{ id: unknown; label: unknown; price: number }>
@@ -36,6 +38,7 @@ const minReturnDate = computed(() => booking.value.pickupDate || todayStr)
 const selectedCategoryLabel = computed(
   () => categories.value.find((c) => c.id === booking.value.category)?.label ?? booking.value.category
 )
+
 
 const props = defineProps<{ selectedCategory: string }>()
 const emit = defineEmits<{ (e: 'update:selectedCategory', v: string): void }>()
@@ -78,6 +81,7 @@ async function handleSubmit() {
     })
     status.value = 'success'
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.error('Booking email failed to send', error)
     status.value = 'error'
   }
@@ -119,7 +123,7 @@ onUnmounted(() => {
       <SectionHead :eyebrow="t('booking.eyebrow')" :title="t('booking.title')" :intro="t('booking.intro')" center max-width="60ch" />
 
       <div class="max-w-2xl mx-auto mt-10">
-        <div class="bg-white rounded-2xl border border-line shadow-sm p-6 min-[640px]:p-8">
+        <div class="bg-surface rounded-2xl border border-line shadow-sm p-6 min-[640px]:p-8">
           <form v-if="status !== 'success'" class="grid grid-cols-1 min-[560px]:grid-cols-2 gap-4" @submit.prevent="handleSubmit">
             <AppInput ref="nameFieldRef" v-model="booking.name" icon="user" :placeholder="t('booking.labels.name')" class="min-[560px]:col-span-2" />
 
@@ -138,7 +142,6 @@ onUnmounted(() => {
               class="min-[560px]:col-span-2"
             />
 
-          
             <div class="min-[560px]:col-span-2">
               <p class="text-[0.8rem] font-semibold text-ink-soft mb-2">{{ t('booking.labels.location') }}</p>
               <div class="flex gap-2">
