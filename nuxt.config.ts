@@ -39,13 +39,15 @@ export default defineNuxtConfig({
         templateId: '',
         publicKey: '',
       },
+      localizebotApiBaseUrl: '',
+      localizebotWebsiteKey: '',
     },
   },
 
   i18n: {
     restructureDir: '.',
     strategy: 'prefix_except_default',
-    defaultLocale: 'el',
+    defaultLocale: 'en',
     detectBrowserLanguage: false,
     langDir: 'locales',
     vueI18n: './i18n.config.ts',

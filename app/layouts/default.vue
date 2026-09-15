@@ -17,5 +17,6 @@ useHead({
 		</main>
 		<AppFooter />
 		<MobileCtaBar />
+		<LocalizeBotWidget />
 	</div>
 </template>
