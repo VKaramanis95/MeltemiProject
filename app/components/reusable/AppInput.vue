@@ -9,7 +9,7 @@ withDefaults(
     placeholder?: string
     required?: boolean
     options?: Option[]
-   
+
     min?: string
   }>(),
   {
@@ -40,6 +40,7 @@ defineExpose({ focus })
       ref="fieldRef"
       v-model="model"
       :required="required"
+      :aria-label="placeholder"
       class="w-full appearance-none rounded-lg border border-line bg-surface pl-10 pr-8 py-2.5 text-[0.9rem] text-ink focus:outline-none focus:ring-2 focus:ring-teal"
     >
       <option value="" disabled>{{ placeholder }}</option>

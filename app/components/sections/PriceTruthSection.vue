@@ -30,7 +30,7 @@ const badItems = computed(() => (tm('truth.badItems') as unknown[]).map((i) => r
 
       <div class="relative mt-8 rounded-2xl overflow-hidden">
         <img src="/images/hero-kos-banner.webp" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
-        
+      
         <div class="absolute inset-0 bg-gradient-to-r from-navy-deep/85 via-navy-deep/60 to-navy-deep/30" aria-hidden="true" />
         <div class="relative flex flex-col min-[640px]:flex-row min-[640px]:items-center min-[640px]:justify-between gap-4 p-6 min-[640px]:p-8">
           <p class="text-white text-[1.15rem] font-bold">{{ t('truth.banner.title') }}</p>
