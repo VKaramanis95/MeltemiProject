@@ -11,7 +11,7 @@ withDefaults(
 </script>
 
 <template>
-  <div class="bg-white rounded-2xl border border-line p-6 flex flex-col">
+  <div class="bg-surface rounded-2xl border border-line p-6 flex flex-col">
     <div class="flex items-center gap-0.5">
       <Icon
         v-for="i in 5"

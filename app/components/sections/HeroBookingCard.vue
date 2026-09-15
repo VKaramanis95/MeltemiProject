@@ -1,7 +1,5 @@
 <script setup lang="ts">
 const { t, tm, rt } = useI18n()
-
-
 type CategoryOption = { id: string; label: string; price: number }
 const categories = computed<CategoryOption[]>(() => {
   const raw = tm('booking.categories') as unknown as Array<{ id: unknown; label: unknown; price: number }>
@@ -96,7 +94,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="bg-white text-ink rounded-2xl shadow-2xl shadow-black/30 p-6">
+  <div class="bg-surface text-ink rounded-2xl shadow-2xl shadow-black/30 p-6">
     <template v-if="status !== 'success'">
       <h2 class="font-bold text-[1.05rem] text-navy-deep mb-4">{{ t('booking.quickTitle') }}</h2>
 
