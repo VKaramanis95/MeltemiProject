@@ -1,5 +1,7 @@
 <script setup lang="ts">
 const { t } = useI18n()
+
+
 type FleetCar = {
   id: string
   category: string
@@ -20,6 +22,8 @@ function onImgError(e: Event) {
   const img = e.target as HTMLImageElement
   if (img.dataset.fallback) return 
   img.dataset.fallback = '1'
+
+  img.removeAttribute('srcset')
   img.src = '/images/cars/placeholder.jpg'
 }
 </script>
@@ -31,7 +35,9 @@ function onImgError(e: Event) {
     <div class="relative w-full aspect-[4/3] bg-surface-2 flex items-center justify-center">
       <Icon name="car" size="40" stroke="1.2" class="text-ink-soft/40" />
       <img
-        :src="`/images/cars/${car.id}.webp`"
+        :src="`/images/cars/${car.id}-640.webp`"
+        :srcset="`/images/cars/${car.id}-320.webp 320w, /images/cars/${car.id}-640.webp 640w`"
+        sizes="(min-width: 960px) 33vw, (min-width: 640px) 50vw, 85vw"
         :alt="car.name"
         class="absolute inset-0 w-full h-full object-cover"
         loading="lazy"
