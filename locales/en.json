@@ -1,0 +1,244 @@
+{
+  "site": {
+    "name": "Meltemi Rentals",
+    "rentalsWord": "RENTALS",
+    "city": "Kos, Greece",
+    "phoneDisplay": "22420 12345",
+    "phoneHref": "+302242012345",
+    "email": "info{'@'}meltemirentals.gr",
+    "address": "Airport Avenue, Kos"
+  },
+  "nav": {
+    "ariaLabel": "Main navigation",
+    "cars": "Cars",
+    "why": "Why Us",
+    "location": "Location",
+    "contact": "Contact",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "eyebrow": "Car rental in Kos",
+    "titleLine1": "€35 a day.",
+    "titleLine2": "Everything included.",
+    "titleLine3": "No surprises at the counter.",
+    "lede": "Seen an \"€8/day\" somewhere else? Read what's underneath it first. At Meltemi, the price you see is the price you pay — full insurance, a second driver and airport delivery are included, not added on.",
+    "ctaPrimary": "See the cars →",
+    "ctaSecondary": "or call now:",
+    "trust": [
+      "<b>4.9/5</b> from 210 rentals",
+      "<b>12 cars</b> available today",
+      "10 years of experience on Kos"
+    ],
+    "badges": [
+      "Airport delivery & pickup",
+      "Full insurance (no excess)",
+      "24/7 support",
+      "Second driver included"
+    ]
+  },
+  "truth": {
+    "eyebrow": "The real cost",
+    "title": "The trick behind \"€8 a day\"",
+    "intro": "You've probably seen this before: a low headline price, then insurance, an excess deposit, a delivery fee, fuel — one on top of another, until you reach a number you never budgeted for. We do the opposite: we tell you the final price upfront.",
+    "goodTitle": "At Meltemi, €35 means €35",
+    "goodItems": [
+      "Full insurance, zero excess",
+      "Second driver at no extra cost",
+      "Free pickup & drop-off at the airport",
+      "Full-to-full fuel, no \"price difference\"",
+      "24/7 support phone",
+      "No amount held on your credit card"
+    ],
+    "badTitle": "Elsewhere, \"€8\" usually becomes ~€48",
+    "badItems": [
+      "Mandatory insurance: +€15/day",
+      "€1,200 excess held on your card",
+      "Airport delivery fee: +€25",
+      "Fuel priced above the pump",
+      "You find out at the counter, suitcases already in hand"
+    ],
+    "calloutGood": "€35",
+    "calloutGoodLabel": "quoted = €35 final",
+    "calloutBad": "€8",
+    "calloutBadLabel": "quoted = usually ~€48 final. Do the math before you book, not after.",
+    "banner": {
+      "title": "Real value. No hidden costs.",
+      "cta": "Request your car now"
+    }
+  },
+  "fleet": {
+    "eyebrow": "Our fleet",
+    "title": "12 cars, serviced before every handover",
+    "intro": "Pick a category — the price includes everything listed above, on every car.",
+    "perDay": "/ day",
+    "bookLabel": "Book this →",
+    "popularBadge": "Popular choice",
+    "cars": [
+      {
+        "id": "economy",
+        "category": "Economy",
+        "name": "e.g. Fiat Panda or similar",
+        "desc": "Great for 2 people — easy to park in the old town's narrow streets.",
+        "price": 35,
+        "seats": 4,
+        "doors": 5,
+        "bags": 2,
+        "transmission": "Manual"
+      },
+      {
+        "id": "compact",
+        "category": "Compact",
+        "name": "e.g. VW Polo or similar",
+        "desc": "Room for 4 people and their luggage. Our most booked car.",
+        "price": 42,
+        "seats": 5,
+        "doors": 5,
+        "bags": 3,
+        "transmission": "Manual"
+      },
+      {
+        "id": "suv",
+        "category": "SUV / Family",
+        "name": "e.g. Dacia Duster or similar",
+        "desc": "Space for 5 — ideal for a day trip to the Asklepieion or Kefalos.",
+        "price": 55,
+        "seats": 5,
+        "doors": 5,
+        "bags": 4,
+        "transmission": "Manual"
+      },
+      {
+        "id": "auto",
+        "category": "Automatic",
+        "name": "e.g. VW T-Roc automatic",
+        "desc": "For when you don't want to think about gears on holiday.",
+        "price": 65,
+        "seats": 5,
+        "doors": 5,
+        "bags": 3,
+        "transmission": "Automatic"
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why Meltemi",
+    "title": "Three reasons, no fanfare",
+    "items": [
+      {
+        "title": "Price with no surprises",
+        "desc": "What you see in the price is what you pay. No mandatory insurance at the counter, no \"excess\" you discover once you're there."
+      },
+      {
+        "title": "Free airport delivery",
+        "desc": "You don't lose an hour of holiday time hunting for an office with kids and suitcases in tow. We're waiting at the exit."
+      },
+      {
+        "title": "24/7 phone, not a call centre",
+        "desc": "Something goes wrong at 11pm? We pick up — the actual owners, not someone in another country."
+      }
+    ]
+  },
+  "booking": {
+    "eyebrow": "Booking",
+    "quickTitle": "Request a booking",
+    "title": "Reserve your car",
+    "intro": "Send the request — we'll call you to confirm, no commitment or payment now.",
+    "labels": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone (ideally with WhatsApp)",
+      "category": "Car category",
+      "categoryPlaceholder": "Choose a category",
+      "pickupDate": "Pickup date",
+      "returnDate": "Return date",
+      "location": "Pickup point",
+      "locationAirport": "Kos Airport (free)",
+      "locationCity": "City office",
+      "notes": "Notes (optional)",
+      "notesPlaceholder": "e.g. child seat, flight time"
+    },
+    "categories": [
+      { "id": "economy", "label": "Economy", "price": 35 },
+      { "id": "compact", "label": "Compact", "price": 42 },
+      { "id": "suv", "label": "SUV / Family", "price": 55 },
+      { "id": "auto", "label": "Automatic", "price": 65 }
+    ],
+    "submit": "Send booking request →",
+    "submitting": "Sending…",
+    "note": "No payment now. We'll call you within 1 hour to confirm.",
+    "successHeading": "Thanks, {name}!",
+    "successMsg": "Got it! We'll call you within 1 hour to confirm.",
+    "successRecapLabel": "Your request",
+    "successAutoReset": "This closes automatically in a few seconds…",
+    "errorMsg": "Something went wrong with the form. Call us on 22420 12345 or email info{'@'}meltemirentals.gr — we'll book it directly.",
+    "stub": {
+      "place": "Kos, Greece",
+      "priceLabel": "Price",
+      "priceValue": "All included, no surprises",
+      "responseLabel": "Response",
+      "responseValue": "Within 1 hour",
+      "note": "Boarding-pass style · not a real ticket ✈"
+    }
+  },
+  "reviews": {
+    "eyebrow": "Reviews",
+    "title": "What renters say",
+    "intro": "Feedback from renters who've booked with us on Kos.",
+    "ratingLine": "<b>4.9/5</b> average rating",
+    "placeholderName": "Reviewer name",
+    "placeholderTexts": [
+      "No hidden fees at pickup — the price we were quoted is the price we paid.",
+      "Easy airport pickup and a clean, well-kept car. No complaints.",
+      "Called with a question and actually got a straight answer, fast.",
+      "Booked last minute and still got a great rate. Car was ready and waiting.",
+      "Return was quick — no queue, no upsell tricks, just handed back the keys.",
+      "Been renting from them for years now. Always consistent, always easy."
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "intro": "Everything you need to know before renting with us. Can't find it here? Call us at 22420 12345.",
+    "categories": [
+      {
+        "name": "Booking & requirements",
+        "items": [
+          { "q": "What do I need to bring when I pick up the car?", "a": "Your driver's license (held for at least 1 year), a passport or ID card, and the credit or debit card used to book — all under the same name as the reservation." },
+          { "q": "What's the minimum age to rent?", "a": "21, with at least 1 year of driving experience. Drivers under 25 may have a small young-driver surcharge depending on the car category — we'll tell you upfront, never at the counter." },
+          { "q": "How far in advance should I book?", "a": "Anytime — even the same day if a car's available. Booking a few days ahead just guarantees your preferred category, especially in July–August." }
+        ]
+      },
+      {
+        "name": "Pricing & payment",
+        "items": [
+          { "q": "Is the price I see really the price I pay?", "a": "Yes. The rate shown includes full insurance, unlimited mileage, and airport delivery — no surprise extras at pickup. That's the whole point of \"35€ means 35€.\"" },
+          { "q": "Do you take a deposit?", "a": "We place a refundable hold on your card at pickup (released automatically once the car's returned undamaged) — it's held, not charged." },
+          { "q": "What payment methods do you accept?", "a": "Visa and Mastercard, credit or debit. We can't take cash for the deposit hold, but cash works fine for the rental itself if you prefer." }
+        ]
+      },
+      {
+        "name": "Pickup, insurance & changes",
+        "items": [
+          { "q": "Where can I pick up the car?", "a": "Free delivery to Kos Airport, or pick up from our city office — your choice at booking, no extra charge either way." },
+          { "q": "What's the fuel policy?", "a": "Full-to-full — you get the car with a full tank and return it full. No refueling markup." },
+          { "q": "Can I change or cancel my booking?", "a": "Yes, free of charge up to 24 hours before pickup. Just call or email us and we'll sort it out." }
+        ]
+      }
+    ],
+    "ctaTitle": "Still have questions?",
+    "ctaText": "Get in touch with us !",
+    "ctaButton": "Book your car →"
+  },
+  "footer": {
+    "about": "Family-run car rental on Kos since 2011. 12 cars, prices with no surprises.",
+    "contactHeading": "Contact",
+    "hoursHeading": "Hours",
+    "hours": "Daily 07:00–23:00",
+    "support": "24/7 phone support",
+    "copyright": "{name} © {year} · All rights reserved"
+  },
+  "mobilebar": {
+    "call": "Call",
+    "book": "Book now"
+  }
+}
